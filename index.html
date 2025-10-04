@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
         <p>68070202</p>
-        <h2>ITF Website</h2>
+        <h1>ITF Website</h1>
         <p>Week 14</p>
     </nav>
 
@@ -36,52 +39,83 @@
             <h2>Accoount Overview</h2>
 
             <div class="info-box">
-                <h3>Account Information</h3>
-                <p>Name: Apichaya Kulsuwan</p>
-                <p>Type: Savings Account</p>
+                <img src="02pic.jpg">
+                <div>
+                    <h3 class="mytitle">Account Information</h3>
+                    <p class="mytitle">Name: Apichaya Kulsuwan</p>
+                    <p class="mytitle">Type: Savings Account</p>
+                </div>
             </div>
 
             <div class="balance-box">
-                <h3>Balance Information</h3>
-                <label for="account-balance">Current account balance:</label>
-                <input type="number" id="account-balance" value="0" readonly>
-                <br>
-                <label for="cash-balance">Current cash balance:</label>
-                <input type="number" id="cash-balance" value="0" readonly>
-                <button id="btn-change-balance" disabled>Change</button>
+                <img src="03 pic.png">
+                <div class="balance-content">
+                    <h3 class="mytitle" >Balance Information</h3>
+
+                    <div class="balance-content">
+                        <label class="mytitle" for="account-balance">Current account balance:</label>
+                        <input class="mytitle"type="number" id="account-balance" value="0" readonly>
+                    </div>
+
+                    <div class="balance-content">
+                        <label class="mytitle" for="cash-balance">Current cash balance:</label>
+                        <input class="mytitle" type="number" id="cash-balance" value="0" readonly>
+                    </div>
+                    <div class="balance-button">
+                        <button class="mytitle" id="btn-change-balance" disabled>Change</button>
+                    </div>
+                </div>
             </div>
 
             <div class="operation-box">
-                <h3>Bank Operation</h3>
-                <select id="operation-type">
-                    <option value="Withdraw">Withdraw</option>
-                    <option value="Deposit">Deposit</option>
-                </select>
-                <input type="number" id="operation-amount" value="1" min="1">
-                <button id="btn-proceed">Proceed</button>
+                <img src="04 pic.jpg">
+                <div>
+                    <h3 class="mytitle">Bank Operation</h3>
+                    <select class="mytitle" id="operation-type">
+                        <option value="Withdraw">Withdraw</option>
+                        <option value="Deposit">Deposit</option>
+                    </select>
+                    <input class="mytitle" type="number" id="operation-amount" value="1" min="1">
+                    <button class="mytitle" id="btn-proceed">Proceed</button>
+                </div>
             </div>
         </section>
-    </div>
 
     <section class="financial-tools">
         <h2>Financial Tools</h2>
 
         <div class="converter-box">
-            <h3>Currency Converter</h3>
-            <label for="input-balance">Input balance:</label>
-            <input type="number" id="input-balance" value="0">
+            <img src="05 pic.jpg">
+            <div class="converter-content">
+                <h3 class="mytitle">Currency Converter</h3>
 
-            <label for="output-balance">Output balance:</label>
-            <input type="text" id="output-balance" value="0" readonly>
+                <div class="converter-row">
+                    <label class="mytitle" for="input-balance">Input balance:</label>
+                    <input class="mytitle" type="number" id="input-balance" value="0">
+                </div>
 
-            <label for="input-currency">Input currency:</label>
-            <select id="input-currency">
-                <option value="USD">USD</option>
-                <option value="THB">THB</option>
-            </select>
-            <button id="btn-convert">Convert</button>
+                <div class="converter-row">
+                    <label class="mytitle" for="output-balance">Output balance:</label>
+                    <input class="mytitle" type="text" id="output-balance" value="0" readonly>
+                </div>
+
+                <div class="converter-row">
+                    <label class="mytitle" for="input-currency">Input currency:</label>
+                    <select class="mytitle" id="input-currency">
+                        <option value="USD">USD</option>
+                        <option value="THB">THB</option>
+                    </select>
+                </div>
+
+                <div class="converter-row-button">
+                    <button class="mytitle" id="btn-convert">Convert</button>
+                </div>
+
+            </div>
         </div>
     </section>
+
+    </div>
 <!-- 
     <div>
         Enter number: <input type="number" id="myinput" value="0">
