@@ -24,3 +24,12 @@ body {
 #container-title img{
     width: 100px;
 }
+
+#mytitle {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.mytitle {
+    margin: 5px;
+}
