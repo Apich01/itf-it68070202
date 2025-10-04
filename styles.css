@@ -34,21 +34,17 @@ body {
     margin: 5px;
 }
 
-#square-container {
-    width: 100vw;
-    height: 300px;
-    display: flex;
-    justify-content: center;
+.transaction-log-container {
+    width: 98%;
+    max-width: 2000px;
+    margin: 0 auto 20px auto;
 }
 
-.square-box {
-    width: 99vw;
-    height: 250px;
-    background-color: rgb(237, 236, 236);
-    border: 2px solid rgb(205, 205, 205);
-    margin: 10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.log-box {
+    height: 150px;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(205, 205, 205);
+    padding: 10px;
+    overflow-y: scroll;
+    white-space: pre-wrap;
 }
