@@ -31,10 +31,62 @@
         <pre id="transaction-log" class="log-box"></pre>
     </div>
 
+    <div class="container-02">
+        <section class="account-overview">
+            <h2>Accoount Overview</h2>
+
+            <div class="info-box">
+                <h3>Account Information</h3>
+                <p>Name: Apichaya Kulsuwan</p>
+                <p>Type: Savings Account</p>
+            </div>
+
+            <div class="balance-box">
+                <h3>Balance Information</h3>
+                <label for="account-balance">Current account balance:</label>
+                <input type="number" id="account-balance" value="0" readonly>
+                <br>
+                <label for="cash-balance">Current cash balance:</label>
+                <input type="number" id="cash-balance" value="0" readonly>
+                <button id="btn-change-balance" disabled>Change</button>
+            </div>
+
+            <div class="operation-box">
+                <h3>Bank Operation</h3>
+                <select id="operation-type">
+                    <option value="Withdraw">Withdraw</option>
+                    <option value="Deposit">Deposit</option>
+                </select>
+                <input type="number" id="operation-amount" value="1" min="1">
+                <button id="btn-proceed">Proceed</button>
+            </div>
+        </section>
+    </div>
+
+    <section class="financial-tools">
+        <h2>Financial Tools</h2>
+
+        <div class="converter-box">
+            <h3>Currency Converter</h3>
+            <label for="input-balance">Input balance:</label>
+            <input type="number" id="input-balance" value="0">
+
+            <label for="output-balance">Output balance:</label>
+            <input type="text" id="output-balance" value="0" readonly>
+
+            <label for="input-currency">Input currency:</label>
+            <select id="input-currency">
+                <option value="USD">USD</option>
+                <option value="THB">THB</option>
+            </select>
+            <button id="btn-convert">Convert</button>
+        </div>
+    </section>
+<!-- 
     <div>
         Enter number: <input type="number" id="myinput" value="0">
         <button onclick="add()">+1</button>
-    </div>
+    </div> -->
 
     <script src="script.js"></script>
 </body>
