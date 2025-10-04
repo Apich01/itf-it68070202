@@ -33,3 +33,22 @@ body {
 .mytitle {
     margin: 5px;
 }
+
+#square-container {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.square-box {
+    width: 99vw;
+    height: 250px;
+    background-color: rgb(237, 236, 236);
+    border: 2px solid rgb(205, 205, 205);
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
