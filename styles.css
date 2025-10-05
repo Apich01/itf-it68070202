@@ -169,17 +169,14 @@ button:hover {
     width: 100%;
 }
 
-.balance-box .balance-content .balance-row label {
-    flex-shrink: 0; 
-    width: 120px;
-}
 
 .balance-box .balance-content .balance-row input {
     flex-grow: 1;
     width: auto;
 }
 
-.balance-box .balance-content .balance-row button {
-    justify-content: center;
-    margin-top: 10px;
+.balance-button {
+    display: flex;
+    justify-content: end;
+    margin-right: 5px;
 }
