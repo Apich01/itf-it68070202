@@ -75,36 +75,10 @@ btnProceed.addEventListener("click", function () {
     updateBalances();
 });
 
-// === Converter ===
-btnConvert.addEventListener("click", function () {
-    const amount = parseFloat(inputBalance.value);
-    const currency = inputCurrency.value;
 
-    if (isNaN(amount) || amount < 0) {
-        alert("Please enter a valid input balance!");
-        return;
-    }
-
-    let result = 0;
-
-    if (currency === "USD") {
-        // สมมุติอัตราแลกเปลี่ยน 1 USD = 36.5 THB
-        result = amount * 36.5;
-        outputBalance.value = `${result.toFixed(2)} THB`;
-        addLog(`💱 Convert ${amount} USD → ${result.toFixed(2)} THB`);
-    } else if (currency === "THB") {
-        result = amount / 36.5;
-        outputBalance.value = `${result.toFixed(2)} USD`;
-        addLog(`💱 Convert ${amount} THB → ${result.toFixed(2)} USD`);
-    }
-});
-
-// === Update balance display ===
 function updateBalances() {
     accountInput.value = accountBalance;
     cashInput.value = cashBalance;
 }
 
-// // === Initial setup ===
 updateBalances();
-// addLog("💰 Bank system ready.");

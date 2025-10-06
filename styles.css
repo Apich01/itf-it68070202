@@ -9,15 +9,21 @@
 }
 
 nav {
-    background-color: skyblue;
+    background-color: rgba(255, 89, 0, 0.859);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav p {
+    font-weight: 500;
+    color: white;
 }
 body {
     margin: 0;
+    background-color: white;
 }
 
 #container {
@@ -36,6 +42,7 @@ body {
 #mytitle {
     font-weight: bold;
     font-size: 25px;
+    color: rgba(255, 89, 0, 0.859);
 }
 
 .mytitle {
@@ -51,11 +58,22 @@ body {
 
 .log-box {
     height: 150px;
-    background-color: rgb(233, 233, 233);
-    border: 1px solid rgb(205, 205, 205);
+    background-color: rgb(255, 209, 163);
+    border: 1px solid rgb(251, 183, 116);
     padding: 10px;
     overflow-y: scroll;
     white-space: pre-wrap;
+    color: rgb(0, 0, 0);
+    width: 400;
+}
+
+.log-box::-webkit-scrollbar{
+    background-color: white;
+}
+
+.log-box::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 154, 99, 0.859);
+    border-radius: 10px;
 }
 
 .container-02 {
@@ -71,10 +89,16 @@ body {
     flex: 1;
 }
 
+h1 {
+    font-weight: 600;
+    color: white;
+
+}
+
 h2 {
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
-    color: #333;
+    color: rgba(255, 89, 0, 0.859);
     font-size: 30px;
     font-weight: 500;
 }
@@ -82,6 +106,7 @@ h2 {
 h3 {
     font-size: 25px;
     font-weight: 500;
+    color: rgba(255, 89, 0, 0.859);
 }
 
 
@@ -109,7 +134,7 @@ input[type="text"], input[type="number"], select {
 
 button {
     padding: 8px 15px;
-    background-color: #007bff;
+    background-color: rgba(255, 89, 0, 0.859);
     color: white;
     border: none;
     border-radius: 4px;
@@ -117,7 +142,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: rgba(255, 89, 0, 0.653);
 }
 
 /* .balance-box label, .balance-box input {
